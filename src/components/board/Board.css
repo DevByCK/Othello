@@ -1,0 +1,47 @@
+.board {
+  display: grid;
+  width: min(92vw, 520px);
+  grid-template-columns: repeat(8, 1fr);
+  gap: 4px;
+  background: var(--color-board-frame);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.cell {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 0;
+  padding: 0;
+  border-radius: 4px;
+  background: var(--color-board-cell);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.cell--valid::after {
+  content: '';
+  width: 22%;
+  height: 22%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.cell:disabled {
+  cursor: not-allowed;
+}
+
+.stone {
+  width: 70%;
+  height: 70%;
+  border-radius: 999px;
+}
+
+.stone--black {
+  background: var(--color-stone-black);
+}
+
+.stone--white {
+  background: var(--color-stone-white);
+}

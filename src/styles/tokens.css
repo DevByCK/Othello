@@ -1,0 +1,12 @@
+:root {
+  --color-bg: #101827;
+  --color-surface: #1f2937;
+  --color-text: #f9fafb;
+  --color-board-frame: #064e3b;
+  --color-board-cell: #059669;
+  --color-stone-black: #111827;
+  --color-stone-white: #f3f4f6;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+}
+
